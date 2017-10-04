@@ -1,0 +1,31 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "RESTful To Do list",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client; npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leticiacostadias/todo.git"
+  },
+  "author": "Letícia Costa Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leticiacostadias/todo/issues"
+  },
+  "homepage": "https://github.com/leticiacostadias/todo#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.1",
+    "mongoose": "^4.12.0"
+  }
+}
